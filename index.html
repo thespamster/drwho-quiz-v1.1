@@ -19,53 +19,67 @@
 
     <!-- the main design elements for the look of the site including buttons, timer and spans for game info, answers and scores -->
 
-    <body>
-        <header>
-            <div class="container">
-                <div class="row justify-content-center" style="height:40dvh">
+    <body id="body-style">
+        <div class="container">
+            <header>
+                <div class="row text-center" style="height:5dvh">
+                    <h3>'30 Seconds to Doomsday'</h3>
+                </div>
+                <div class="row d-flex justify-content-center" style="height:15dvh">
                     <div class="col-12 d-flex justify-content-center game-background">
-                        <div class="col-12 col-md-10 d-flex justify-content-evenly align-items-center" style="height:25dvh">
+                        <div class="col-12 col-md-10 d-flex justify-content-evenly align-items-center" style="height:15dvh">
                             <div class="col-2 d-flex justify-content-center align-items-center">
-                                <button class="btn btn-primary btn-lg w-100" onclick="buttonStart()">Volume</button>
+                                <button class="btn btn-primary btn-lg w-100 button-style" onclick="buttonVolume()">Vol</button>
                             </div>
                             <div class="col-2 d-flex justify-content-center align-items-center">
-                                <button class="btn btn-primary btn-lg w-100" onclick="buttonStart()">Start</button>
+                                <button class="btn btn-primary btn-lg w-100 button-style" onclick="buttonStart()">Start</button>
                             </div>
                             <div class="col-2 d-flex justify-content-center align-items-center">
                                 <h3>30</h3>
                             </div>
                             <div class="col-2 d-flex justify-content-center align-items-center">
-                                <button class="btn btn-primary btn-lg w-100" onclick="buttonQuit()">Quit</button>
+                                <button class="btn btn-primary btn-lg w-100 button-style" onclick="buttonQuit()">Quit</button>
                             </div>
                             <div class="col-2 d-flex justify-content-center align-items-center" >
-                                <button class="btn btn-primary btn-lg w-100" onclick="buttonRules()">Rules</button>
+                                <button class="btn btn-primary btn-lg w-100 button-style" onclick="buttonRules()">Rules</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center" style="height: 50dvh">
+            </header>
+                <div class="row justify-content-center" style="height: 15dvh">
+                    <div class="col-6 d-flex justify-content-center text-center">
+                        <span>Questions will appear here</span>
+                    </div>
+                </div>
+                <div class="row justify-content-center" style="height: 30dvh">
                     <div class="col-6 d-flex flex-column align-items-evenly">
                         <div class="col">
-                            <button class="btn btn-primary w-100" onclick="buttonAnswerA()">Question A</button>
+                            <button class="btn btn-primary w-100 button-style" onclick="buttonAnswerA()">Question A</button>
                         </div>
                         <div class="col">
-                            <button class="btn btn-primary w-100" onclick="buttonAnswerB()">Question B</button>
+                            <button class="btn btn-primary w-100 button-style" onclick="buttonAnswerB()">Question B</button>
                         </div>
                         <div class="col">
-                            <button class="btn btn-primary w-100" onclick="buttonAnswerC()">Question C</button>
+                            <button class="btn btn-primary w-100 button-style" onclick="buttonAnswerC()">Question C</button>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center" style="height: 10dvh">
-                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-start">
+                <div class="row d-flex justify-content-center" style="height: 10dvh">
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-end">
                         <div class="col-4 col-md-6">
-                            <button class="btn btn-primary btn-lg w-100" onclick="buttonSimplify()">Simplify</button>
+                            <button class="btn btn-primary btn-lg w-100 button-style" onclick="buttonSimplify()">Simplify</button>
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
-      
+            <footer>
+                <div class="row d-flex">
+                    <div class="col-12 d-flex justify-content-evenly align-items-center" style="height: 20dvh">
+                        <span>Score: 00</span>
+                        <span>High Score: 00</span>
+                    </div>
+            </footer>
+        </div>
 
         <div id="rulesModal" class="modal">
 

@@ -501,15 +501,33 @@
   }
 } */
 
+#body-style {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+    width: 100%;
+    background-color: rgba(0, 59, 111, 1.0);
+    color: white;
+}
+
 .game-background {
-    background-color: rgb(0, 56, 101);
-    background-image: url("../img/question_mark_background.webp"); 
+    background-color: rgb(0, 59, 111);
+    background-image: url("../img/question_mark_img.webp"); 
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-position: center;
-    min-height: 100dvh;
+    height: 90dvh;
     width: 100%;
     margin: 0;
     padding: 0;  
+}
+
+.button-style {
+    background-color: rgba(0, 59, 111, 1.0) !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: 5px 5px 5px black;
 }
     
