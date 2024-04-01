@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="the game 30 seconds to doomsday is presented in this one page format. a multiple choice classic series doctor who quiz featuring a 30 second countdown. can you beat the clock and the quiz?">
+        
+        <!-- link to custom css code and fontawesome cdn -->
+
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- browser tab title and a custom icon for the website -->
+
+        <title>30 Seconds to Doomsday</title>
+        <link rel="shortcut icon" href="assets/img/favicon.ico">
+    </head>
+
+    <!-- the main design elements for the look of the site including buttons, timer and spans for game info, answers and scores -->
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="row justify-content-center" style="height:40dvh">
+                    <div class="col-12 d-flex justify-content-center game-background">
+                        <div class="col-12 col-md-10 d-flex justify-content-evenly align-items-center" style="height:25dvh">
+                            <div class="col-2 d-flex justify-content-center align-items-center">
+                                <button class="btn btn-primary btn-lg w-100" onclick="buttonStart()">Volume</button>
+                            </div>
+                            <div class="col-2 d-flex justify-content-center align-items-center">
+                                <button class="btn btn-primary btn-lg w-100" onclick="buttonStart()">Start</button>
+                            </div>
+                            <div class="col-2 d-flex justify-content-center align-items-center">
+                                <h3>30</h3>
+                            </div>
+                            <div class="col-2 d-flex justify-content-center align-items-center">
+                                <button class="btn btn-primary btn-lg w-100" onclick="buttonQuit()">Quit</button>
+                            </div>
+                            <div class="col-2 d-flex justify-content-center align-items-center" >
+                                <button class="btn btn-primary btn-lg w-100" onclick="buttonRules()">Rules</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center" style="height: 50dvh">
+                    <div class="col-6 d-flex flex-column align-items-evenly">
+                        <div class="col">
+                            <button class="btn btn-primary w-100" onclick="buttonAnswerA()">Question A</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-primary w-100" onclick="buttonAnswerB()">Question B</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-primary w-100" onclick="buttonAnswerC()">Question C</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center" style="height: 10dvh">
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-start">
+                        <div class="col-4 col-md-6">
+                            <button class="btn btn-primary btn-lg w-100" onclick="buttonSimplify()">Simplify</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+      
+
+        <div id="rulesModal" class="modal">
+
+            <!-- Modal content -->
+
+            <div class="modal-content">
+              <span class="close">X</span>
+                <p id="rules-style">Rules:</p>
+                <p>Welcome to '30 Seconds to Doomsday' a quiz all about the classic era of Doctor Who from 1963 to 1989.</p>
+                <p>Toggle the sound effects on/off with the big blue button.</p>
+                <p>When you press START a question will be displayed and the 30 second countdown will begin.</p>
+                <p>Each question has 3 possible answers. Select your answer using the A,B or C buttons.Only one answer is correct.</p>
+                <p>You can make the question easier to answer by selecting SIMPLIFY to remove one of the incorrect answers, leaving you with a 50/50 chance.</p>
+                <p>Get the answer correct and the answer will be highlighted in green. Get it wrong and it  will be highlighted in red and the answer you should have chosen will turn green.</p>
+                <p>You score 2 points for a correct answer. Unless you selected SIMPLIFY in which case a correct answer scores 1 point.</p>
+                <p>Each time a question is displayed the 30 second countdown resets and begins again.</p>
+                <p>The game ends when you answer a question incorrectly or the timer reaches 00.</p>
+                <p>You can QUIT at any time before the last 10 seconds of the countdown but your score will be set to 00 and you automatically lose the game.</p>
+                <p>There are 42 questions in total. From the 1st Doctor's run starting way back in 1963 to the 7th Doctor's final show in 1989. 6 questions about each of the 7 Doctor's time. Why 42 questions? Can you work it out? There's a clue in the quiz.</p>
+                <p>The TV movie is the dividing line between classic Who and regenerated Who and is therefore not included in this quiz.</p>
+                <p>How well do you know your classic Who?</p>
+            </div>
+        </div>
+
+        <!-- link to custom js code -->
+
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/bootstrap.js"></script>
+    </body>
+</html>
