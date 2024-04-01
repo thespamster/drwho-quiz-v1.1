@@ -29,19 +29,19 @@
                     <div class="col-12 d-flex justify-content-center game-background">
                         <div class="col-12 col-md-10 d-flex justify-content-evenly align-items-center" style="height:15dvh">
                             <div class="col-2 d-flex justify-content-center align-items-center">
-                                <button class="btn btn-primary btn-lg w-100 button-style" onclick="buttonVolume()">Vol</button>
+                                <button class="btn btn-primary btn-lg w-100 button-style" onclick="buttonVolume()">VOL: ON</button>
                             </div>
                             <div class="col-2 d-flex justify-content-center align-items-center">
-                                <button class="btn btn-primary btn-lg w-100 button-style" onclick="buttonStart()">Start</button>
+                                <button class="btn btn-primary btn-lg w-100 button-style" onclick="buttonStart()">START</button>
                             </div>
                             <div class="col-2 d-flex justify-content-center align-items-center">
                                 <h3>30</h3>
                             </div>
                             <div class="col-2 d-flex justify-content-center align-items-center">
-                                <button class="btn btn-primary btn-lg w-100 button-style" onclick="buttonQuit()">Quit</button>
+                                <button class="btn btn-primary btn-lg w-100 button-style" onclick="buttonQuit()">QUIT</button>
                             </div>
                             <div class="col-2 d-flex justify-content-center align-items-center" >
-                                <button class="btn btn-primary btn-lg w-100 button-style" onclick="buttonRules()">Rules</button>
+                                <button class="btn btn-primary btn-lg w-100 button-style" data-bs-toggle="modal" data-bs-target="#rulesModal">RULES</button>
                             </div>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                 <div class="row d-flex justify-content-center" style="height: 10dvh">
                     <div class="col-12 col-md-6 d-flex justify-content-center align-items-end">
                         <div class="col-4 col-md-6">
-                            <button class="btn btn-primary btn-lg w-100 button-style" onclick="buttonSimplify()">Simplify</button>
+                            <button class="btn btn-primary btn-lg w-100 button-style" onclick="buttonSimplify()">SIMPLIFY</button>
                         </div>
                     </div>
                 </div>
@@ -81,28 +81,42 @@
             </footer>
         </div>
 
-        <div id="rulesModal" class="modal">
+  <!-- Modal -->
 
-            <!-- Modal content -->
-
-            <div class="modal-content">
-              <span class="close">X</span>
-                <p id="rules-style">Rules:</p>
-                <p>Welcome to '30 Seconds to Doomsday' a quiz all about the classic era of Doctor Who from 1963 to 1989.</p>
-                <p>Toggle the sound effects on/off with the big blue button.</p>
-                <p>When you press START a question will be displayed and the 30 second countdown will begin.</p>
-                <p>Each question has 3 possible answers. Select your answer using the A,B or C buttons.Only one answer is correct.</p>
-                <p>You can make the question easier to answer by selecting SIMPLIFY to remove one of the incorrect answers, leaving you with a 50/50 chance.</p>
-                <p>Get the answer correct and the answer will be highlighted in green. Get it wrong and it  will be highlighted in red and the answer you should have chosen will turn green.</p>
-                <p>You score 2 points for a correct answer. Unless you selected SIMPLIFY in which case a correct answer scores 1 point.</p>
-                <p>Each time a question is displayed the 30 second countdown resets and begins again.</p>
-                <p>The game ends when you answer a question incorrectly or the timer reaches 00.</p>
-                <p>You can QUIT at any time before the last 10 seconds of the countdown but your score will be set to 00 and you automatically lose the game.</p>
-                <p>There are 42 questions in total. From the 1st Doctor's run starting way back in 1963 to the 7th Doctor's final show in 1989. 6 questions about each of the 7 Doctor's time. Why 42 questions? Can you work it out? There's a clue in the quiz.</p>
-                <p>The TV movie is the dividing line between classic Who and regenerated Who and is therefore not included in this quiz.</p>
-                <p>How well do you know your classic Who?</p>
-            </div>
+  <div class="modal fade" id="rulesModal" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content modal-style">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="rulesModalLabel" style="color: black">Rules Of The Game:</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body" style="color: black">
+            <p>Welcome to '30 Seconds to Doomsday' a quiz all about the classic era of Doctor Who from 1963 to 1989.</p>
+            <p>Toggle the sound effects on/off with the 'Volume' button.</p>
+            <p>When you press 'START' a question will be displayed and the 30 second countdown will begin.</p>
+            <p>Each question has 3 possible answers. Select your answer by clicking on it. Only one answer is correct.</p>
+            <p>You can make the question easier to answer by selecting 'SIMPLIFY' to remove one of the incorrect answers, leaving you with
+                a 50/50 chance to get it right.</p>
+            <p>Get the answer correct and the answer will be highlighted in green. Get it wrong and it  will be highlighted in red and the
+                answer you should have chosen will turn green.</p>
+            <p>You score 2 points for a correct answer. Unless you selected 'SIMPLIFY' in which case a correct answer scores 1 point.</p>
+            <p>Each time a question is displayed the 30 second countdown resets and begins again.</p>
+            <p>The game ends when you answer a question incorrectly or the timer reaches 00.</p>
+            <p>You can 'QUIT' at any time before the last 10 seconds of the countdown but your score will be set to 00 and you automatically
+                lose the game.</p>
+            <p>There are 42 questions in total. From the 1st Doctor's run starting way back in 1963 to the 7th Doctor's final show in 1989.
+                6 questions about each of the 7 Doctor's time. Why 42 questions? Can you work it out? There's a clue in the quiz.</p>
+            <p>The TV movie is the dividing line between classic Who and regenerated Who and is therefore not included in this quiz.</p>
+            <p>How well do you know your classic Who?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary button-style" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        
 
         <!-- link to custom js code -->
 
