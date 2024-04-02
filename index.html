@@ -19,6 +19,12 @@
     <!-- the main design elements for the look of the site including buttons, timer and spans for game info, answers and scores -->
 
     <body id="body-style">
+        <div id="cookieConsent" class="text-center">
+            <p>This game uses a cookie to store the high score. Click accept to play or close the browser to quit without 
+                setting the cookie.
+            </p>
+            <button id="cookieYes">Accept</button>
+        </div>
         <div class="container">
             <header>
                 <div class="row text-center" style="height:5dvh">
@@ -28,16 +34,16 @@
                     <div class="col-12 d-flex justify-content-center game-background">
                         <div class="col-12 col-md-10 d-flex justify-content-evenly align-items-center" style="height:15dvh">
                             <div class="col-2 d-flex justify-content-center align-items-center">
-                                <button class="btn btn-primary btn-lg w-100 button-style" onclick="buttonVolume()">VOL: ON</button>
+                                <button class="btn btn-primary btn-lg w-100 button-style" id="buttonVolume">VOL: ON</button>
                             </div>
                             <div class="col-2 d-flex justify-content-center align-items-center">
-                                <button class="btn btn-primary btn-lg w-100 button-style" onclick="buttonStart()">START</button>
+                                <button class="btn btn-primary btn-lg w-100 button-style" id="buttonStart">START</button>
                             </div>
                             <div class="col-2 d-flex justify-content-center align-items-center">
-                                <div id="timer-style"><p>30</p></div>
+                                <div id="timer-style"><p id="countdownTimer">00</p></div>
                             </div>
                             <div class="col-2 d-flex justify-content-center align-items-center">
-                                <button class="btn btn-primary btn-lg w-100 button-style" onclick="buttonQuit()">QUIT</button>
+                                <button class="btn btn-primary btn-lg w-100 button-style" id="buttonQuit">QUIT</button>
                             </div>
                             <div class="col-2 d-flex justify-content-center align-items-center" >
                                 <button class="btn btn-primary btn-lg w-100 button-style" data-bs-toggle="modal" data-bs-target="#rulesModal">RULES</button>
@@ -48,34 +54,36 @@
             </header>
                 <div class="row justify-content-center" style="height: 15dvh">
                     <div class="col-10 d-flex justify-content-center align-items-center question-style">
-                        <span>Questions will appear here</span>
+                        <span id="question">Questions will appear here</span>
                     </div>
                 </div>
+                <div id="hideDiv">
                 <div class="row justify-content-center" style="height: 30dvh">
                     <div class="col-6 d-flex flex-column align-items-evenly">
                         <div class="col">
-                            <button class="btn btn-primary w-100 button-style" onclick="buttonAnswerA()">Question A</button>
+                            <button class="btn btn-primary w-100 button-style" id="buttonAnswerA"></button>
                         </div>
                         <div class="col">
-                            <button class="btn btn-primary w-100 button-style" onclick="buttonAnswerB()">Question B</button>
+                            <button class="btn btn-primary w-100 button-style" id="buttonAnswerB"></button>
                         </div>
                         <div class="col">
-                            <button class="btn btn-primary w-100 button-style" onclick="buttonAnswerC()">Question C</button>
+                            <button class="btn btn-primary w-100 button-style" id="buttonAnswerC"></button>
                         </div>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center" style="height: 10dvh">
                     <div class="col-12 col-md-6 d-flex justify-content-center align-items-end">
                         <div class="col-4 col-md-6">
-                            <button class="btn btn-primary btn-lg w-100 button-style" onclick="buttonSimplify()">SIMPLIFY</button>
+                            <button class="btn btn-primary btn-lg w-100 button-style" id="buttonSimplify">SIMPLIFY</button>
                         </div>
                     </div>
                 </div>
+            </div>
             <footer>
                 <div class="row d-flex">
                     <div class="col-12 d-flex justify-content-evenly align-items-center" style="height: 20dvh">
-                        <div class="col-2 d-flex question-style justify-content-center align-items-center"><span class="d-none d-md-block">Score :</span><span class="d-md-none d-block">S :</span><span> 00</span></div>
-                        <div class="col-2 d-flex question-style justify-content-center align-items-center"><span class="d-none d-md-block">High :</span><span class="d-md-none d-block">H :</span><span> 00</span></div>
+                        <div class="col-2 d-flex question-style justify-content-center align-items-center"><span class="d-none d-md-block">Score: </span><span class="d-md-none d-block">S: </span><span id="currentScore">00</span></div>
+                        <div class="col-2 d-flex question-style justify-content-center align-items-center"><span class="d-none d-md-block">High: </span><span class="d-md-none d-block">H: </span><span id="highScore">00</span></div>
                     </div>
             </footer>
         </div>
@@ -115,9 +123,12 @@
             </div>
         </div>
 
-        <!-- link to custom js code -->
+        <!-- link to custom, bootstrap and jquery js code -->
 
-        <script src="assets/js/main.js"></script>
+        <script src="assets/js/jquery-3.7.1.js"></script>
         <script src="assets/js/bootstrap.js"></script>
+        <script src="assets/js/main.js"></script>
+        
+        
     </body>
 </html>

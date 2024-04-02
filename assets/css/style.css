@@ -500,6 +500,8 @@
     background-color: rgb(255, 128, 0);
   }
 } */
+   
+/*    NEW CSS    */
 
 #body-style {
     font-family: 'Roboto', sans-serif;
@@ -531,6 +533,7 @@
     border: 0 !important;
     border-radius: 0 !important;
     box-shadow: 5px 5px 5px black;
+    z-index: 255;
 }
 
 .modal-style {
@@ -567,4 +570,24 @@
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 1.25em;
+}
+
+button {
+  height: 3rem;
+}
+
+#cookieConsent {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+#cookieYes {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 0;
+  border-radius: 0;
+  box-shadow: 5px 5px 5px black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
