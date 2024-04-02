@@ -1,6 +1,6 @@
 # 30 Seconds To Doomsday V1.1
 
-Site under construction.
+** Site under construction **
 
 This is a rewrite of my 2nd diploma project. 
 The purpose of the rewrite is to see the difference between my coding then and how my coding skills have developed over time.
@@ -41,6 +41,8 @@ The original game can be seen here: [30 Seconds to Doomsday](thespamster.github.
 
 - [iStock by Getty Images](https://www.istockphoto.com/) : Paid for question mark background image.
 
-- [404 error jpg.](https://www.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_8030430.htm#query=404&position=3&from_view=keyword&track=sph&uuid=2f72b0bf-f9e1-46f8-a48c-845f73431143") - Image by storyset on Freepik. 
+- [404 error jpg.](https://www.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_8030430.htm#query=404&position=3&from_view=keyword&track=sph&uuid=2f72b0bf-f9e1-46f8-a48c-845f73431143") - Image by storyset on Freepik.
+
+- [Stackoverflow](https://stackoverflow.com/) - great resource for coding questions and answers.
 
 
