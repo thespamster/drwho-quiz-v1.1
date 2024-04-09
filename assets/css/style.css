@@ -35,13 +35,14 @@
     border-radius: 0 !important;
     box-shadow: 5px 5px 5px black;
     z-index: 255;
+    font-size: 0.9rem !important;
 }
 
 .modal-style {
     border-radius: 0 !important;
 }
 
-.title-style {
+.titleStyle {
     font-family: "Roboto", sans-serif;
     font-size: 1.5em;
     font-weight: 700; 
@@ -79,7 +80,7 @@ button {
 #cookieConsent {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 #cookieYes {

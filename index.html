@@ -28,7 +28,7 @@
         <div class="container">
             <header>
                 <div class="row text-center" style="height:5dvh">
-                    <p class="title-style py-1">'30 Seconds to Doomsday'</p>
+                    <p class="titleStyle py-1">'30 Seconds to Doomsday'</p>
                 </div>
                 <div class="row d-flex justify-content-center" style="height:15dvh">
                     <div class="col-12 d-flex justify-content-center game-background">
@@ -36,30 +36,30 @@
                             <div class="col-2 d-flex justify-content-center align-items-center">
                                 <button class="btn btn-primary btn-lg w-100 button-style" id="buttonVolume">VOL: ON</button>
                             </div>
-                            <div class="col-2 d-flex justify-content-center align-items-center">
+                            <div class="col-2 d-flex justify-content-center align-items-center pe-1">
                                 <button class="btn btn-primary btn-lg w-100 button-style" id="buttonStart">START</button>
                             </div>
-                            <div class="col-2 d-flex justify-content-center align-items-center">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
                                 <div id="timer-style"><p id="countdownTimer">00</p></div>
                             </div>
                             <div class="col-2 d-flex justify-content-center align-items-center">
                                 <button class="btn btn-primary btn-lg w-100 button-style" id="buttonQuit">QUIT</button>
                             </div>
-                            <div class="col-2 d-flex justify-content-center align-items-center" >
+                            <div class="col-2 d-flex justify-content-center align-items-center pe-1" >
                                 <button class="btn btn-primary btn-lg w-100 button-style" data-bs-toggle="modal" data-bs-target="#rulesModal">RULES</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </header>
-                <div class="row justify-content-center" style="height: 15dvh">
-                    <div class="col-10 d-flex justify-content-center align-items-center question-style">
-                        <span id="question">Questions will appear here</span>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 d-flex justify-content-center align-items-center question-style text-center" style="min-height: 20dvh">
+                        <span id="questionAskedText"></span>
                     </div>
                 </div>
                 <div id="hideDiv">
-                <div class="row justify-content-center" style="height: 30dvh">
-                    <div class="col-6 d-flex flex-column align-items-evenly">
+                <div class="row justify-content-center py-2" style="height: 30dvh">
+                    <div class="col-12 col-md-10 col-lg-8 d-flex flex-column align-items-evenly">
                         <div class="col">
                             <button class="btn btn-primary w-100 button-style" id="buttonAnswerA"></button>
                         </div>
@@ -83,8 +83,8 @@
             <footer>
                 <div class="row d-flex">
                     <div class="col-12 d-flex justify-content-evenly align-items-center" style="height: 20dvh">
-                        <div class="col-2 d-flex question-style justify-content-center align-items-center"><span class="d-none d-md-block">Score: </span><span class="d-md-none d-block">S: </span><span id="currentScore">00</span></div>
-                        <div class="col-2 d-flex question-style justify-content-center align-items-center"><span class="d-none d-md-block">High: </span><span class="d-md-none d-block">H: </span><span id="highScore">00</span></div>
+                        <div class="col-4 col-md-3 col-lg-2 d-flex question-style justify-content-center align-items-center"><span>Score: </span><span id="currentScore">00</span></div>
+                        <div class="col-4 col-md-3 col-lg-2 d-flex question-style justify-content-center align-items-center"><span>High: </span><span id="highScore">00</span></div>
                     </div>
                 </div>
             </footer>
