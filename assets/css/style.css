@@ -26,6 +26,31 @@
     padding: 0;  
 }
 
+.jsBackgroundGreen {
+    background-color: green !important;
+    margin: 0 !important;
+    padding: 2px !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: 5px 5px 5px black;
+    z-index: 255;
+    font-size: 0.9rem !important;
+}
+
+.jsBackgroundRed {
+    background-color: red !important;
+    margin: 0 !important;
+    padding: 2px !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: 5px 5px 5px black;
+    z-index: 255;
+    font-size: 0.9rem !important;
+
+}
+
 .button-style {
     background-color: rgba(0, 59, 111, 1.0) !important;
     margin: 0 !important;
